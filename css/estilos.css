@@ -184,7 +184,7 @@ body{
 /*--------------------------------------*/
 .texto_sobre_mi{
     width: max-content ;
-    min-width: 217px;
+    min-width: 330px;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -198,11 +198,26 @@ body{
     font-size: min(max(25px, 5vw), 35px);
 }
 .nombre{
+    display:block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 15ch;
     color: rgb(5, 5, 169);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: min(max(30px, 5vw), 40px);
     font-weight: bold;
     text-align: center;
+
+    animation: typing 3s steps(14), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+
+@keyframes blink{
+    50%{border-color: transparent;}
 }
 /*-------------------------------*/
 /*----------Habilidades----------*/
@@ -341,7 +356,10 @@ body{
 .javaScript #cuarto,
 .javaScript #quinto,
 .jquery #cuarto,
-.jquery #quinto{
+.jquery #quinto,
+.react #quinto,
+.react #cuarto,
+.react #tercero{
     background:#ffffff;
 }
 /*---------------------------------*/
