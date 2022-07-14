@@ -199,7 +199,7 @@ body{
 }
 .nombre{
     display:block;
-    font-family: monospace;
+    font-family: monospace !important;
     white-space: nowrap;
     border-right: 4px solid;
     width: 15ch;
