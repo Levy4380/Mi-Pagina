@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/766a645075.js" crossorigin="anonymous"></script>
+    <title>Tomas Levy</title>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav_link ">Tomas Levy</a>
+            <button class="nav_toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav_menu">
+                <!-- etiqueta1.class*cantidad>etiqueta2.clase*cantidad -->
+                <li class="nav_menu_item">
+                    <a href="#" class="nav_menu_link nav_link" id="section_sobre_mi">Sobre mi</a>
+                </li>
+                <li class="nav_menu_item">
+                    <a href="#" class="nav_menu_link nav_link"
+                    id="section_habilidades">Habilidades</a>
+                </li>
+                <li class="nav_menu_item">
+                    <a href="#" class="nav_menu_link nav_link"
+                    id="section_proyectos">Proyectos</a>
+                </li>
+                <li class="nav_menu_item">
+                    <a href="#" class="nav_menu_link nav_link"
+                    id="section_ubicacion">Ubicacion</a>
+                </li>
+                <li class="nav_menu_item">
+                    <a href="#" class="nav_menu_link nav_link"
+                    id="section_contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--1ra seccion-->
+        <section class="section_sobre_mi" id="section_sobre_mi">
+            <div class="background bg_sobre_mi">
+            </div>
+            <picture class="picture_sobre_mi">
+                <img src="images/Yo.jfif" alt="" >
+            </picture>
+            <div class="texto_sobre_mi">
+                <span class="saludo">Hola!</span>
+                <span class="nombre">Soy Tomas Levy</span>
+                <span class="trabajo">Web Developer</span>
+            </div>
+        </section>
+        <!--2da seccion-->
+        <section class="section_habilidades"
+        id="section_habilidades">
+            <div class="background bg_habilidades">
+            </div>
+            <section class="texto_habilidades">
+                <h3>¿Quien soy?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum hic ratione quaerat similique ut at, exercitationem nihil placeat repudiandae non aliquid accusantium delectus nulla doloremque. Doloremque atque fugiat nihil? Recusandae.
+                Qui error consectetur aut quasi illum dolores sequi maxime delectus, culpa labore, sint a perspiciatis deleniti placeat reiciendis repellat eos eaque similique aliquid accusamus esse laborum. Adipisci pariatur ipsa repudiandae.
+                </p>
+            </section>
+            <section class="slider_habilidades">
+                <h3>¿Que tecnologias manejo?</h3>
+                <a href="#" id="habilidades_prev" class="flecha-habilidades anterior active"><span class="fa fa-angle-left"> 
+                </span></a>
+                <a href="#" id="habilidades_next" class="flecha-habilidades siguiente active"><span class="fa fa-angle-right">
+                </span></a>
+                <div class="contenedor_slider_habilidades">
+                    <div class="slide active">
+                        <!-- <p>HTML</p> -->
+                        <img src="images/html5.png" alt="">
+                        <div class="botones html">
+                            <span id="primero"></span>
+                            <span id="segundo"></span>
+                            <span id="tercero"></span>
+                            <span id="cuarto"></span>
+                            <span id="quinto"></span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <!-- <p>CSS</p> -->
+                        <img src="images/css3.png" alt="">
+                        <div class="botones css">
+                            <span id="primero"></span>
+                            <span id="segundo"></span>
+                            <span id="tercero"></span>
+                            <span id="cuarto"></span>
+                            <span id="quinto"></span>
+                        </div>
+                    </div>
+                    <div class="slide ">
+                        <!-- <p>JavaScript</p> -->
+                        <img src="images/javascript.png" alt="">
+                        <div class="botones javaScript">
+                            <span id="primero"></span>
+                            <span id="segundo"></span>
+                            <span id="tercero"></span>
+                            <span id="cuarto"></span>
+                            <span id="quinto"></span>
+                        </div>
+                    </div>
+                    <div class="slide ">
+                        <!-- <p>JQuery</p> -->
+                        <img src="images/jquery.png" alt="">
+                        <div class="botones jquery">
+                            <span id="primero"></span>
+                            <span id="segundo"></span>
+                            <span id="tercero"></span>
+                            <span id="cuarto"></span>
+                            <span id="quinto"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </section> 
+        <!--3ra seccion-->       
+        <section class="section_proyectos">
+            <div class="background bg_proyectos"></div>
+            <h1>Mis proyectos</h1>
+            <section class="slider_animado_proyectos"></section>
+        </section>
+        <!--4ta seccion-->
+        <section class="section_ubicacion">
+            <h1>Mi Ubicacion</h1>
+        </section>
+        <!--5ta seccion-->
+        <footer class="section_contacto">
+            <h1>Contacto</h1>
+        </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testeo.js"></script>
+</body>
+</html>
