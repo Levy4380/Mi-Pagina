@@ -351,15 +351,13 @@ body{
 }
 
 .contenedor_slider_habilidades
-.html #quinto,
-.css #quinto,
+#quinto,
 .javaScript #cuarto,
-.javaScript #quinto,
 .jquery #cuarto,
-.jquery #quinto,
-.react #quinto,
 .react #cuarto,
-.react #tercero{
+.react #tercero,
+.python #cuarto,
+.python #tercero{
     background:#ffffff;
 }
 /*---------------------------------*/
