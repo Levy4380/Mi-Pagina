@@ -6,16 +6,16 @@ let altoVentana = function(banner){
 
     banner.css({'height' : alto + 'px'}); 
 };
+altoVentana($('.section_home'));
 altoVentana($('.section_sobre_mi'));
-altoVentana($('.section_habilidades'));
-altoVentana($('.section_proyectos'));
+// altoVentana($('.section_proyectos'));
 altoVentana($('.section_ubicacion'));
 altoVentana($('.section_contacto'));
 
 $(window).resize(function(){
+   altoVentana($('.section_home'));
    altoVentana($('.section_sobre_mi'));
-   altoVentana($('.section_habilidades'));
-   altoVentana($('.section_proyectos'));
+//    altoVentana($('.section_proyectos'));
     altoVentana($('.section_ubicacion'));
     altoVentana($('.section_contacto'));    
 });
@@ -56,16 +56,16 @@ function elementInViewport(element){
     }
 };
 
+elementInViewport('section_home');
 elementInViewport('section_sobre_mi');
-elementInViewport('section_habilidades');
-elementInViewport('section_proyectos');
+// elementInViewport('section_proyectos');
 elementInViewport('section_ubicacion');
 elementInViewport('section_contacto');
 
 $(window).scroll(function(){
+    elementInViewport('section_home');
     elementInViewport('section_sobre_mi');
-    elementInViewport('section_habilidades');
-    elementInViewport('section_proyectos');
+    // elementInViewport('section_proyectos');
     elementInViewport('section_ubicacion');
     elementInViewport('section_contacto');
 });
@@ -174,3 +174,19 @@ $('#habilidades_prev').on('click',function(e){
        $("#habilidades_prev").css("pointer-events", "auto");
     },400);
 });
+
+//-------------------------------------
+//----------Section ubicacion----------
+//-------------------------------------
+
+function iniciarMap(){
+    var coord = {lat: -34.921126 ,lng:-57.954565};
+    var map = new google.maps.Map(document.getElementById('map'),{
+        zoom: 12,
+        center: coord
+    });
+    var marker = new google.maps.Marker({
+        position: coord,
+        map: map
+    });
+}

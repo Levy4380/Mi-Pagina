@@ -23,7 +23,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
     background-image: url(https://jgestradam.com/assets/bg.webp);
     background-attachment: fixed;
 }
@@ -149,7 +149,7 @@ body{
         left: 0;
     }
 /*--------------------------------------*/
-    .section_habilidades .bg_habilidades{
+    .section_sobre_mi .bg_sobre_mi{
         height: 89rem;
     }
 }
@@ -157,7 +157,7 @@ body{
 /*--------------------------------*/
 /*------------Sobre mi------------*/
 /*--------------------------------*/
-.section_sobre_mi{
+.section_home{
     width: 100%;
     padding: 20px;
     margin: 10px 0px;
@@ -170,19 +170,19 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
 }
 /*--------------------------------------*/
-.picture_sobre_mi{
+.picture_home{
     width: 20%;
     max-width:272px;
     min-width: 190px;
     margin:20px;
    
     }
-.picture_sobre_mi img{
+.picture_home img{
     width: 100%;
     border-radius: 50%;
 }
 /*--------------------------------------*/
-.texto_sobre_mi{
+.texto_home{
     width: max-content ;
     min-width: 330px;
     height: 20%;
@@ -223,7 +223,7 @@ body{
 /*----------Habilidades----------*/
 /*-------------------------------*/
 
-.section_habilidades{
+.section_sobre_mi{
     margin-top: 20px;
     width: 100%;
     padding: 20px;
@@ -239,16 +239,16 @@ body{
 }
 
 
-.background_habilidades{
+/* .background_sobre_mi{
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     background-image: url(https://jgestradam.com/assets/bg.webp);
     background-attachment: fixed;
-}
+} */
 /*--------------------------------------*/
-.texto_habilidades{
+.texto_sobre_mi{
     width: 40%;
     min-width: 250px;
     padding: 10px;
@@ -261,11 +261,11 @@ body{
     border-radius: 10px;
     background-color: rgba(38, 35, 35, 0.537);
 }
-.texto_habilidades h3{
+.texto_sobre_mi h3{
     color: #0505a9;
     margin: 10px;
 }
-.texto_habilidades p{
+.texto_sobre_mi p{
     color: white;
 }
 /*--------------------------------------*/
@@ -360,10 +360,10 @@ body{
 .python #tercero{
     background:#ffffff;
 }
-/*---------------------------------*/
-/*------------Proyectos------------*/
-/*---------------------------------*/
-.section_proyectos{
+/*----------------------------------------------------*/
+/*------------Proyectos(seccion pospuesta)------------*/
+/*----------------------------------------------------*/
+/* .section_proyectos{
     width: 100%;
     padding: 20px;
     margin: 10px 0;
@@ -377,5 +377,95 @@ body{
 
 .slider_animado_proyectos{
     min-width: 250px;;
+} */
+
+/*----------------------------------*/
+/*------------Ubicacion------------*/
+/*---------------------------------*/
+
+.section_ubicacion{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.section_ubicacion h1{
+    color: #0505a9;
+    /* color: rgb(255, 255, 255); */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: min(max(25px, 5vw), 35px);
+    margin-bottom: 30px;
 }
 
+
+    #map{
+        height: 50vh;
+        width: 90%;
+        border: #0505a99c 20px solid;
+    }
+
+
+    .section_contacto{
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .section_contacto h1{
+        color: #0505a9;
+        /* color: rgb(255, 255, 255); */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: min(max(25px, 5vw), 35px);
+        margin-bottom: 30px;
+    }
+    .section_contacto h2{
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: min(max(15px, 5vw), 25px);
+        margin-bottom: 30px;
+    }
+
+    .redes-sociales{
+        text-align: center;
+        padding: 20px 0;
+     }
+     
+     .redes-sociales a{
+         display: inline-block;
+         width: 50px;
+         height: 50px;
+         color: white;
+         line-height: 20px;
+         border-radius: 50%;
+         padding: 15px 10px;
+         margin: 10px;
+     }
+     
+     .redes-sociales .github{
+         background:#21262d;
+     }
+     
+     .redes-sociales .linkedin{
+         background:#0a66c2;
+     }
+     
+     .redes-sociales .instagram{
+     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+     }
