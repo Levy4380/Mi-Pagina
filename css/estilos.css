@@ -66,7 +66,6 @@ body{
     margin-right: 40px;
     list-style: none;
 }
-
 .nav_menu_item {
     font-size: 18px;
     margin: 0 10px;
@@ -74,7 +73,6 @@ body{
     /* text-transform: uppercase; */
     width: max-content;
 }
-
 .nav_menu_link:hover ,
 .nav_menu_link_active{
     background-color: #034574;
@@ -82,7 +80,6 @@ body{
     border-radius: 10px;
     transition: 500ms;
 }
-
 .nav_toggle{
     color: white;
     background: none;
@@ -94,26 +91,21 @@ body{
 
     display: none;
 }
-
 /*------------------------------*/
 /*-------Barra Navegacion-------*/
 /*------------Movil-------------*/
-
 @media (max-width: 768px){ /*Aplicara estos estilos cuando la resolucion se modifique*/
     body{
         padding: 70px 20px 0;
     }
-
     .header{
         height: 60px;
     }
-
     .logo{
         font-size:25px;
         padding: 0 20px;
         line-height: 60px;
     }
-
     .nav_menu{
         flex-direction: column;
         margin: 0px;
@@ -150,13 +142,16 @@ body{
     }
 /*--------------------------------------*/
     .section_sobre_mi .bg_sobre_mi{
-        height: 89rem;
+        height: 140rem !important;
+    }
+/*--------------------------------------*/
+    .slider_habilidades img{
+        width: 80% !important;
     }
 }
-
-/*--------------------------------*/
-/*------------Sobre mi------------*/
-/*--------------------------------*/
+/*----------------------------*/
+/*------------Home------------*/
+/*----------------------------*/
 .section_home{
     width: 100%;
     padding: 20px;
@@ -199,17 +194,20 @@ body{
 }
 .nombre{
     display:block;
+   line-height:min(max(30px, 5vw), 40px);
     font-family: monospace !important;
     white-space: nowrap;
     border-right: 4px solid;
     width: 15ch;
-    color: rgb(5, 5, 169);
+    color: #034574;
     font-size: min(max(30px, 5vw), 40px);
     font-weight: bold;
     text-align: center;
+    
+    height:min(max(30px, 5vw), 40px);
 
     animation: typing 3s steps(14), blink .5s infinite step-end alternate;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 @keyframes typing{
@@ -219,10 +217,9 @@ body{
 @keyframes blink{
     50%{border-color: transparent;}
 }
-/*-------------------------------*/
-/*----------Habilidades----------*/
-/*-------------------------------*/
-
+/*----------------------------*/
+/*----------Sobre mi----------*/
+/*----------------------------*/
 .section_sobre_mi{
     margin-top: 20px;
     width: 100%;
@@ -237,16 +234,6 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
     background-attachment: fixed;
 }
-
-
-/* .background_sobre_mi{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-image: url(https://jgestradam.com/assets/bg.webp);
-    background-attachment: fixed;
-} */
 /*--------------------------------------*/
 .texto_sobre_mi{
     width: 40%;
@@ -259,10 +246,10 @@ body{
     align-items: center;
     text-align: justify;
     border-radius: 10px;
-    background-color: rgba(38, 35, 35, 0.537);
+    background-color: rgba(38, 35, 35);
 }
 .texto_sobre_mi h3{
-    color: #0505a9;
+    color: #034574;
     margin: 10px;
 }
 .texto_sobre_mi p{
@@ -282,7 +269,7 @@ body{
     align-items: center;
     align-content: center;
     position: relative;
-    background-color: rgba(38, 35, 35, 0.537);
+    background-color: rgb(38, 35, 35);
 }
 /*--------------------------------------*/
 .contenedor_slider_habilidades{
@@ -293,8 +280,6 @@ body{
     overflow: hidden;
     top: 20px;
 }
-
-
 .slider_habilidades .slide{
     left: 100%;
     width: 200px;
@@ -307,21 +292,20 @@ body{
 .slider_habilidades h3{
     display: flex;
     flex-wrap: wrap;
-    color: #0505a9;
+    color: #034574;
     margin: 5px;
     position:absolute;
     top:10%;
     font-size: min(max(15px, 5vw), 18px);
 }
-
 /*--------------------------------------*/
 .slider_habilidades .flecha-habilidades{
     font-size: 60px;
-    line-height: 60px;
+    /* line-height: 0px; */
     color: rgba(180, 177, 177, 0.533);
     position: absolute;
     z-index: 1;
-    top :50%;
+    top :calc(50%-60px);
     display: block;
 }
 
@@ -337,7 +321,7 @@ body{
     width: 90%;
     height: 204px;
     position: relative;
-    background-color: rgba(38, 35, 35, 0.835);
+    background-color: rgba(120, 113, 113, 0.709);
     border-radius: 10px;
 }
 /*--------------------------------------*/
@@ -346,7 +330,7 @@ body{
     height: 25px;
     display: inline-block;
     margin: 10px 2px;
-    background: #0505a9;
+    background: #034574;
     border-radius: 50%;
 }
 
@@ -396,76 +380,83 @@ body{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .section_ubicacion h1{
-    color: #0505a9;
+    color: #034574;
     /* color: rgb(255, 255, 255); */
     font-family: Arial, Helvetica, sans-serif;
     font-size: min(max(25px, 5vw), 35px);
     margin-bottom: 30px;
 }
+/*----------------------------------*/
+#map{
+    height: 50vh;
+    width: 90%;
+    border: #034574 15px solid;
+    border-radius: 10px;
+}
 
+/*----------------------------------*/
+/*------------Contacto------------*/
+/*---------------------------------*/
 
-    #map{
-        height: 50vh;
-        width: 90%;
-        border: #0505a99c 20px solid;
-    }
+.section_contacto{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
+.section_contacto h1{
+    color: #034574;
+    /* color: rgb(255, 255, 255); */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: min(max(25px, 5vw), 35px);
+    margin-bottom: 30px;
+}
+.section_contacto h2{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: min(max(15px, 5vw), 25px);
+    margin-bottom: 30px;
+}
+/*----------------------------------*/
+.redes-sociales{
+    text-align: center;
+    padding: 20px 0;
+}
 
-    .section_contacto{
-        width: 100%;
-        padding: 20px;
-        margin: 10px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: center;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .section_contacto h1{
-        color: #0505a9;
-        /* color: rgb(255, 255, 255); */
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: min(max(25px, 5vw), 35px);
-        margin-bottom: 30px;
-    }
-    .section_contacto h2{
-        color: rgb(255, 255, 255);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: min(max(15px, 5vw), 25px);
-        margin-bottom: 30px;
-    }
-
-    .redes-sociales{
-        text-align: center;
-        padding: 20px 0;
-     }
-     
-     .redes-sociales a{
-         display: inline-block;
-         width: 50px;
-         height: 50px;
-         color: white;
-         line-height: 20px;
-         border-radius: 50%;
-         padding: 15px 10px;
-         margin: 10px;
-     }
-     
-     .redes-sociales .github{
-         background:#21262d;
-     }
-     
-     .redes-sociales .linkedin{
-         background:#0a66c2;
-     }
-     
-     .redes-sociales .instagram{
+.redes-sociales a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    line-height: 20px;
+    border-radius: 50%;
+    padding: 15px 10px;
+    margin: 10px;
+}
+.redes-sociales .github{
+    background:#21262d;
+}
+.redes-sociales .linkedin{
+    background:#0a66c2;
+}
+.redes-sociales .instagram{
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-     }
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+/*----------------------------------*/
