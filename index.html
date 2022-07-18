@@ -2,12 +2,20 @@
 <!-- Probando github -->
 <html lang="en">
 <head>
+    <!-- Etiquetas Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Recursos -->
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/766a645075.js" crossorigin="anonymous"></script>
     <title>Pagina en construccion</title>
+
+    <!-- Scripts JS -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap" defer></script>
+    <script src="js/testeo.js" defer></script>
 </head>
 <body>
     <!--Barra de navegacion-->
@@ -40,6 +48,7 @@
         </nav>
     </header>
     <!--1ra seccion-->
+    <main>
         <section class="section_home" id="section_home">
             <div class="background bg_home">
             </div>
@@ -55,8 +64,7 @@
         <!--2da seccion-->
         <section class="section_sobre_mi"
         id="section_sobre_mi">
-            <div class="background bg_sobre_mi">
-            </div>
+            <div class="background bg_sobre_mi"></div>
             <section class="texto_sobre_mi">
                 <h3>¿Quien soy?</h3>
                 <p>¿Respuesta corta? Soy un apasionado por la tecnologia, que descubrio en la programacion una forma de liberar su creatividad.<br/>
@@ -65,13 +73,13 @@
                     me permita mejorar los conocimientos que ya tengo y aprender nuevos, en un ambiente mas aplicado.<br/>
                     Si hay algo que me caracteriza es mi capacidad para resolver problemas, siempre intentando lograr soluciones mas eficientes, mas faciles,
                     y mas optimizadas.<br/>
-                    Y por ultimo, como decia un gran amigo mio: "No me contrates por el programador que soy hoy, hacelo por lo que puedo llegar a ser" 
-     
+                    Y por ultimo, como decia un gran amigo mio: "No me contrates por el programador que soy hoy, hacelo por lo que puedo llegar a ser"
+
                 </p>
             </section>
             <section class="slider_habilidades">
                 <h3>¿Que tecnologias manejo?</h3>
-                <a href="#" id="habilidades_prev" class="flecha-habilidades anterior active"><span class="fa fa-angle-left"> 
+                <a href="#" id="habilidades_prev" class="flecha-habilidades anterior active"><span class="fa fa-angle-left">
                 </span></a>
                 <a href="#" id="habilidades_next" class="flecha-habilidades siguiente active"><span class="fa fa-angle-right">
                 </span></a>
@@ -146,8 +154,8 @@
 
 
             </section>
-        </section> 
-        <!--3ra seccion(pospuesta)-->       
+        </section>
+        <!--3ra seccion(pospuesta)-->
         <!-- <section class="section_proyectos">
             <div class="background bg_proyectos"></div>
             <h1>Mis proyectos</h1>
@@ -155,50 +163,39 @@
         </section> -->
         <!--4ta seccion-->
         <section class="section_ubicacion">
-            <div class="background bg_ubicacion">
-            </div>
+            <div class="background bg_ubicacion"></div>
             <h1>¿Donde vivo?</h1>
             <div id="map"></div>
         </section>
         <!--5ta seccion-->
         <section class="section_contacto">
-            <div class="background bg_contacto">
-            </div>
+            <div class="background bg_contacto"></div>
             <h1>¿Como contactarme?</h1>
             <div class="container">
                 <h2>Enviame un mail</h2>
                 <form target="_blank" action="https://formsubmit.co/tomaslevy1999@gmail.com" method="POST">
-                  <div class="form-group">
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
-                      </div>
-                      <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Tu direccion de email" required>
-                      </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" class="form-control" placeholder="Tu direccion de email" required>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Tu mensaje" class="form-control" name="message" rows="10" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" class="form-control" name="message" rows="10" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
                 </form>
-              </div>
-              <section class="redes-sociales">
-                <a href="https://github.com/Levy4380" class="redes github"><span class="fa fa-github"></span></a>
-                <a href="https://www.linkedin.com/in/tomas-levy-9a1368195/" class="redes linkedin"><span class="fa fa-linkedin"></span></a>
-                <a href="https://instagram.com/tomaslevy3/" class="redes instagram"><span class="fa fa-instagram"></span></a>   
-            </section>
-            
-                <button><audio src="https://music.youtube.com/watch?v=l0VtcpwrIOk&list=RDEMjg7Jx0Dj5qs9AeaNPfPwdg"></audio>hola</button>
-    
+            </div>
+                <section class="redes-sociales">
+                    <a href="https://github.com/Levy4380" class="redes github"><span class="fa fa-github"></span></a>
+                    <a href="https://www.linkedin.com/in/tomas-levy-9a1368195/" class="redes linkedin"><span class="fa fa-linkedin"></span></a>
+                    <a href="https://instagram.com/tomaslevy3/" class="redes instagram"><span class="fa fa-instagram"></span></a>
+                </section>
         </section>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-    <script src="js/testeo.js"></script>
+    </main>
 </body>
 </html>
